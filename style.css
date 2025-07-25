@@ -375,3 +375,170 @@ font-size: 30px;
 .twitter{
     padding-top: 10px;
 }
+ /* responsive media */
+@media screen and (max-width: 576px) {
+
+  .navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 12px;
+    flex-grow: 1;
+    justify-content: flex-start;
+  }
+
+  /* Hide Home (1), Shop (2), About Us (3) */
+  .nav-item:nth-child(1),
+  .nav-item:nth-child(2),
+  .nav-item:nth-child(3) {
+    display: none;
+  }
+
+  .cart-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    order: 2;
+    margin-left: auto; /* push cart completely right */
+  }
+
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-title p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .carts-title {
+    margin: 20px;
+  }
+
+  .carts-title h2 {
+    font-size: 28px;
+  }
+
+  .carts-title p {
+    font-size: 14px;
+  }
+
+  .carts-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px;
+  }
+
+  .flower-store {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .trusted-badge {
+    width: 100px;
+    height: 100px;
+    top: -40px;
+    right: -30px;
+  }
+
+  .tow {
+    width: 100%;
+    height: auto;
+  }
+
+  .flower-store-content {
+    margin: 0;
+    padding: 0;
+  }
+
+  .deals-container {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .left-deal,
+  .deal-image2 {
+    width: 100%;
+  }
+
+  .deal-image {
+    width: 100%;
+    height: 180px;
+  }
+
+  .deal-text2 p {
+    font-size: 20px;
+  }
+
+  .deal-text2 a {
+    font-size: 18px;
+  }
+
+  .form-section {
+    text-align: center;
+    height: auto;
+    padding: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .form-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .form-container {
+    flex-direction: column;
+    margin: 0 20px;
+  }
+
+  .form-input,
+  .form-btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .footer-links ul {
+    margin-left: 0;
+  }
+
+  .media-icons {
+    justify-content: center;
+    margin-left: 0;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
